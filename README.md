@@ -10,7 +10,7 @@ git clone https://github.com/toan215/projectT.git
 ```
 
 ```
-cd project
+cd projectT
 ```
 
 ```
