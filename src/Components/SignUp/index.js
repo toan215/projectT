@@ -40,7 +40,7 @@ const SignUp = () => {
           <Button
             type="primary"
             className="buttonBlock"
-            style={{ width: "100%" }}
+            style={{ width: "100%", fontSize: "32px" }}
           >
             <label className="buttonTitle">Sign Up</label>
           </Button>

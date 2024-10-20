@@ -20,7 +20,7 @@ const LeftSider = () => {
         collapsible
         collapsed={collapsed}
         theme="light"
-        collapsedWidth={128}
+        collapsedWidth={100}
         width={256}
         onCollapse={(value) => setCollapsed(value)}
       >

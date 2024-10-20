@@ -34,7 +34,7 @@ const Login = () => {
           <Button
             type="primary"
             className="buttonBlock"
-            style={{ width: "100%" }}
+            style={{ width: "100%", fontSize: "32px" }}
           >
             <label className="buttonTitle">Login</label>
           </Button>
