@@ -1,7 +1,7 @@
 import { Flex, Typography, Input, Space, Button, Divider } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
-import GoogleButton from "../googleButton";
-import FacebookButton from "../facebookButtuon";
+import GoogleButton from "./googleButton";
+import FacebookButton from "./facebookButtuon";
 import Forgotpassword from "./forgotPassword";
 import SignUp from "./signUpWays";
 import React from "react";

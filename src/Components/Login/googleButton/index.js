@@ -1,8 +1,8 @@
 import React from "react";
-import Facebook from "../../Assets/Icon/facebook.svg";
+import Google from "../../../Assets/Icon/google.svg";
 import { Button, Avatar } from "antd";
 
-const FacebookButton = () => {
+const GoogleButton = () => {
   return (
     <React.Fragment>
       <Button
@@ -13,10 +13,11 @@ const FacebookButton = () => {
           borderRadius: "30px",
         }}
       >
-        <Avatar src={Facebook} size={"large"}></Avatar>
-        Continue with Facebook
+        <Avatar src={Google} size={"large"}></Avatar>
+        Continue with Google
       </Button>
     </React.Fragment>
   );
 };
-export default FacebookButton;
+
+export default GoogleButton;
