@@ -16,9 +16,6 @@ const Header = ({ collapsed }) => {
         <Image src={logo} preview={false} width={"5vmax"} />
         {!collapsed && <Title level={3}>Paper Translation</Title>}
       </Flex>
-      {/* <Flex justify="center" style={{ margin: "24px 0" }}>
-        {!collapsed && <UploadButton />}
-      </Flex> */}
     </React.Fragment>
   );
 };

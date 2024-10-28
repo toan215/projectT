@@ -1,0 +1,16 @@
+/* Xóa border của toàn bộ menu */
+.ant-menu-horizontal {
+  border-bottom: none !important;
+  background: linear-gradient(90deg, #459aff 0%, #6054ff 100%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+/* Xóa border của các item được chọn */
+.ant-menu-item::after,
+.ant-menu-horizontal .ant-menu-item-selected::after,
+.ant-menu-horizontal .ant-menu-item:hover::after {
+  display: none !important;
+}
