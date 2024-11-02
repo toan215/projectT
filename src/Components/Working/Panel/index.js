@@ -15,8 +15,19 @@ const Panel = () => {
           width: "56vw",
         }}
       >
-        <Flex justify="center" style={{ marginTop: "8px" }}>
+        <Flex
+          justify="center"
+          align="center"
+          style={{ marginTop: "8px" }}
+          vertical
+          gap={"large"}
+        >
           <NavBar />
+
+          {/* codehere */}
+          <div
+            style={{ width: "56px", height: "56px", backgroundColor: "black" }}
+          ></div>
         </Flex>
       </div>
     </React.Fragment>

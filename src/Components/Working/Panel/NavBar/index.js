@@ -1,23 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import { Menu } from "antd";
 import Translate from "./Translate";
 import ChatBox from "./ChatBox";
 import Definite from "./Definite";
 
-
 const NavBar = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const handleItemClick = (index) => {
+    setActiveIndex(index);
+  };
   return (
     <React.Fragment>
-      <Menu
-        style={{ width: "75%" }}
-        mode="horizontal"
-        items={[
-          { key: "1", label: <Translate /> },
-          { key: "2", label: <ChatBox /> },
-          { key: "3", label: <Definite /> },
-        ]}
-      />
+      <nav>
+        <a
+          href
+          onClick={() => handleItemClick(1)}
+          className={activeIndex === 1 ? "active" : ""}
+        >
+          <Translate />
+        </a>
+        <a
+          href
+          onClick={() => handleItemClick(2)}
+          className={activeIndex === 2 ? "active" : ""}
+        >
+          <Definite />
+        </a>
+        <a
+          href
+          onClick={() => handleItemClick(3)}
+          className={activeIndex === 3 ? "active" : ""}
+        >
+          <ChatBox />
+        </a>
+        {activeIndex !== null && <span className={`index-${activeIndex}`} />}
+      </nav>
     </React.Fragment>
   );
 };

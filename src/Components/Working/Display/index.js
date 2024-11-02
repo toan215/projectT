@@ -34,14 +34,6 @@ const Display = ({ collapsed, setCollapsed }) => {
             }}
           />
         </div>
-        <div
-          style={{
-            background: colorBgContainer,
-            borderRadius: borderRadiusLG,
-            width: "56vw",
-            height: "95vh",
-          }}
-        ></div>
       </Space>
     </React.Fragment>
   );
