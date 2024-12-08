@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./style.css";
-import Translate from "./Translate";
-import ChatBox from "./ChatBox";
-import Definite from "./Definite";
 
-const NavBar = () => {
+const NavBar = ({ onFeatureSelect }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const handleItemClick = (index) => {
     setActiveIndex(index);
+    if (onFeatureSelect) onFeatureSelect(index);
   };
   return (
     <React.Fragment>
@@ -17,21 +15,21 @@ const NavBar = () => {
           onClick={() => handleItemClick(1)}
           className={activeIndex === 1 ? "active" : ""}
         >
-          <Translate />
+          Translate
         </a>
         <a
           href
           onClick={() => handleItemClick(2)}
           className={activeIndex === 2 ? "active" : ""}
         >
-          <Definite />
+          Definite
         </a>
         <a
           href
           onClick={() => handleItemClick(3)}
           className={activeIndex === 3 ? "active" : ""}
         >
-          <ChatBox />
+          ChatBox
         </a>
         {activeIndex !== null && <span className={`index-${activeIndex}`} />}
       </nav>

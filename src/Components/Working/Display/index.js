@@ -34,6 +34,8 @@ const Display = ({ collapsed, setCollapsed }) => {
             }}
           />
         </div>
+        {/* display PDF file */}
+        <div style={{ backgroundColor: "gray", height: "90vh" }}></div>
       </Space>
     </React.Fragment>
   );

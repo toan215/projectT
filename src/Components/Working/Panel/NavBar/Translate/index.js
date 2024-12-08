@@ -1,7 +1,12 @@
 import React from "react";
 
 const Translate = () => {
-  return <div>Translate</div>;
+  return (
+    <div style={{ color: "white", padding: "16px" }}>
+      <h2>Translate</h2>
+      <p>This is the translate box.</p>
+    </div>
+  );
 };
 
 export default Translate;
