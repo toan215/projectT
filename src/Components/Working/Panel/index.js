@@ -27,14 +27,12 @@ const Panel = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              color: "white",
+              color: "black",
               fontSize: "24px",
               padding: "0 16px 0 16px",
             }}
           >
-            Hello! Nice to see you here! By pressing the "Translate" button you
-            agree to have your personal data processed as described in our
-            Privacy Policy
+            Hello! Nice to see you here! By pressing the "Translate" button to Start.
           </div>
         );
     }
@@ -61,11 +59,10 @@ const Panel = () => {
           {/* Display box */}
           <div
             style={{
-              width: "32vw",
-              height: "60vh",
-              backgroundColor: "gray",
+              width: "90%",
+              height: "80vh",
+              backgroundColor: "#EBF4FF",
               borderRadius: "8px",
-              overflow: "hidden",
             }}
           >
             {renderFeatureBox()}

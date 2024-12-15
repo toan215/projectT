@@ -5,7 +5,11 @@ import { SettingOutlined } from "@ant-design/icons";
 const SettingsButton = ({ collapsed }) => {
   return (
     <Button
-      style={{ width: collapsed ? "0px" : "230px", borderRadius: "30px" }}
+      style={{
+        width: collapsed ? "0px" : "230px",
+        borderRadius: "30px",
+        fontWeight: "bold",
+      }}
       shape={collapsed ? "circle" : "round"}
       size="large"
       icon={

@@ -14,6 +14,7 @@ function WorkingPage() {
           flexDirection: "row",
           gap: "10px",
           height: "100vh",
+          overflow: "hidden",
         }}
       >
         <LeftSider collapsed={collapsed} />

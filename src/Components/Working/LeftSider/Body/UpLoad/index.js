@@ -37,7 +37,7 @@ const UploadButton = ({ onFileUpload }) => {
           className="gradient_button"
           icon={<PlusOutlined />}
           size="large"
-          style={{ width: "210px", borderRadius: "30px" }}
+          style={{ width: "210px", borderRadius: "30px", fontWeight: "bold" }}
         >
           Upload
         </Button>

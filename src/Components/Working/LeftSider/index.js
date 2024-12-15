@@ -15,7 +15,7 @@ const LeftSider = ({ collapsed }) => {
       theme="light"
       collapsedWidth={100}
       width={256}
-      
+      // style={{ overflow: "hidden" }}
     >
       <HeadSider collapsed={collapsed} />
       <BodySider collapsed={collapsed} />

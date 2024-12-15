@@ -15,7 +15,7 @@ const UserButton = ({ collapsed }) => {
           justify="flex-start"
           align="center"
           gap={"small"}
-          style={{ width: "100%" }}
+          style={{ width: "100%", fontWeight: "bold" }}
         >
           {!collapsed && <label>User</label>}
         </Flex>

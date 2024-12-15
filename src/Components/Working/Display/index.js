@@ -1,6 +1,9 @@
 import React from "react";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { Space, Button, theme, Grid } from "antd";
+import { Viewer, Worker } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import pdf from "../../../Assets/Pdf/pdf_open_parameters.pdf";
 
 const Display = ({ collapsed, setCollapsed }) => {
   const {
@@ -35,7 +38,16 @@ const Display = ({ collapsed, setCollapsed }) => {
           />
         </div>
         {/* display PDF file */}
-        <div style={{ backgroundColor: "gray", height: "90vh" }}></div>
+        <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+          <div
+            style={{
+              border: "1px solid rgba(0, 0, 0, 0.3)",
+              height: "90vh",
+            }}
+          >
+            <Viewer fileUrl={pdf} />
+          </div>
+        </Worker>
       </Space>
     </React.Fragment>
   );

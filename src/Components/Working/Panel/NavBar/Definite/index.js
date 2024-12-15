@@ -2,7 +2,7 @@ import React from "react";
 
 const Definite = () => {
   return (
-    <div style={{ color: "white", padding: "16px" }}>
+    <div style={{ color: "black", padding: "16px" }}>
       <h2>Definite</h2>
       <p>Definition details will appear here.</p>
     </div>

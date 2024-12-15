@@ -11,6 +11,7 @@ const NavBar = ({ onFeatureSelect }) => {
     <React.Fragment>
       <nav>
         <a
+          style={{ fontWeight: "bold" }}
           href
           onClick={() => handleItemClick(1)}
           className={activeIndex === 1 ? "active" : ""}
@@ -18,6 +19,7 @@ const NavBar = ({ onFeatureSelect }) => {
           Translate
         </a>
         <a
+          style={{ fontWeight: "bold" }}
           href
           onClick={() => handleItemClick(2)}
           className={activeIndex === 2 ? "active" : ""}
@@ -25,6 +27,7 @@ const NavBar = ({ onFeatureSelect }) => {
           Definite
         </a>
         <a
+          style={{ fontWeight: "bold" }}
           href
           onClick={() => handleItemClick(3)}
           className={activeIndex === 3 ? "active" : ""}

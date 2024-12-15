@@ -2,7 +2,7 @@ import React from "react";
 
 const Translate = () => {
   return (
-    <div style={{ color: "white", padding: "16px" }}>
+    <div style={{ color: "black", padding: "16px" }}>
       <h2>Translate</h2>
       <p>This is the translate box.</p>
     </div>
